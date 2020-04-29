@@ -1,0 +1,20 @@
+LIB_1 {
+	global:
+		foo;
+	local:
+		*;
+};
+
+LIB_2 {
+	global:
+		bar;
+} LIB_1;
+
+LIB_3 {
+	global:
+		zoo;
+		bar;
+	local:
+		bar_1;
+} LIB_2;
+
